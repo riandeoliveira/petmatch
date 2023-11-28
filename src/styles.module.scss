@@ -42,21 +42,22 @@ $main-color: #f89c9c;
   display: flex;
   gap: 24px;
 
-  &[data-reverse="true"] {
-    flex-direction: row-reverse;
+  @include media-query($tablet-l) {
+    flex-direction: column;
+    text-align: center;
   }
-
-  // @include media-query($tablet-l) {
-  //   flex-direction: column;
-  //   text-align: center;
-  // }
 }
 
 .title {
   color: #fff;
+  flex: 1;
   font-family: "Oswald";
   font-size: 48px;
   text-shadow: 1px 5px 1px #000;
+
+  @include media-query($tablet-l) {
+    font-size: 36px;
+  }
 }
 
 .smartphone {
@@ -65,6 +66,9 @@ $main-color: #f89c9c;
 
 .image {
   border-radius: 10px;
+  flex: 1;
+  object-fit: cover;
+  width: 100%;
 }
 
 .strong {
@@ -84,10 +88,15 @@ $main-color: #f89c9c;
   color: $main-color;
   font-family: "Oswald";
   font-size: 48px;
+
+  @include media-query($tablet-l) {
+    font-size: 36px;
+  }
 }
 
 .smartphones {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -118,4 +127,22 @@ $main-color: #f89c9c;
   font-family: "Oswald";
   font-size: 18px;
   font-weight: 600;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+
+  @include media-query($tablet-l) {
+    flex-direction: column;
+  }
+}
+
+.pets {
+  display: flex;
+  flex: 1;
+  gap: 12px;
+
+  @include media-query($tablet-s) {
+    flex-direction: column;
+  }
 }

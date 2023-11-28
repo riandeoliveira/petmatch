@@ -25,13 +25,15 @@ export const App = (): ReactElement => {
             </h1>
             <img src={pet_1} alt="" height={400} className={styles.image} />
           </section>
-          <section className={styles.section} data-reverse>
+          <section className={`${styles.section} ${styles.reverse}`}>
             <h1 className={styles.title}>
               E se você tivesse na palma da sua mão a possibilidade de mudar
               isso, <strong className={styles.strong}>Você mudaria?</strong>
             </h1>
-            <img src={pet_2} alt="" height={400} className={styles.image} />
-            <img src={pet_3} alt="" height={400} className={styles.image} />
+            <div className={styles.pets}>
+              <img src={pet_2} alt="" height={400} className={styles.image} />
+              <img src={pet_3} alt="" height={400} className={styles.image} />
+            </div>
           </section>
         </div>
         <section className={styles.app_section}>
