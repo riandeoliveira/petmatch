@@ -1,5 +1,5 @@
 {
-  "name": "petmatch-web",
+  "name": "petmatch",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -27,5 +27,29 @@
     "eslint-plugin-react-refresh": "^0.4.4",
     "typescript": "^5.2.2",
     "vite": "^5.0.0"
+  },
+  "metadata": {
+    "stack": [
+      "js",
+      "react",
+      "sass",
+      "ts",
+      "vite"
+    ],
+    "thumbnailUrl": "https://raw.githubusercontent.com/riandeoliveira/petmatch/refs/heads/main/.github/assets/thumbnail.png",
+    "repositoryUrl": "https://github.com/riandeoliveira/petmatch",
+    "projectUrl": "https://petmatch-web.vercel.app/",
+    "isPrivate": false,
+    "isNew": false,
+    "info": {
+      "enUs": {
+        "fullName": "PetMatch",
+        "description": "A landing page developed for raising awareness about animal abandonment in Brazil, encouraging the download of an app for pet adoption."
+      },
+      "ptBr": {
+        "fullName": "PetMatch",
+        "description": "Landing page desenvolvida para a conscientização sobre o abandono de animais no Brasil, incentivando o download de um aplicativo para adoção de pets."
+      }
+    }
   }
 }
